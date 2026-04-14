@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Droplets, Wrench, CheckCircle, Phone, Repeat, Shield, Clock, Star, ArrowRight, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import drillingImg from "@/assets/service-drilling.jpg";
+import drillingImg from "2.jpeg";
 import cleaningImg from "@/assets/service-cleaning.jpg";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
@@ -88,7 +88,7 @@ const Services = () => (
                 "Rings & 6½\" Drilling",
                 "Robo Drilling",
                 "High Pressure Rigs",
-                "Up to 1,500 ft depth",
+                "Up to 2,500 ft depth",
                 "All terrain capable",
                 "Residential & Commercial",
                 "Agricultural Borewells",
@@ -99,7 +99,7 @@ const Services = () => (
               ))}
             </div>
             <a 
-              href={`https://wa.me/919042432061?text=${encodeURIComponent("*Enquiry for Borewell Drilling Quote* \nI would like to get a quote for a new borewell drilling project.")}`}
+              href={`https://wa.me/919663862061?text=${encodeURIComponent("*Enquiry for Borewell Drilling Quote* \nI would like to get a quote for a new borewell drilling project.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors"
@@ -250,8 +250,8 @@ const Services = () => (
         <h2 className="font-heading text-3xl mb-4">Ready to Get Started?</h2>
         <p className="opacity-80 mb-8 max-w-md mx-auto">Free site inspection and transparent pricing — contact us today for a no-obligation quote.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:9042432061" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
-            <Phone size={16} /> Call 90424 32061
+          <a href="tel:9663862061" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
+            <Phone size={16} /> Call 96638 62061
           </a>
           <Link to="/contact" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
             Send Enquiry <ArrowRight size={16} />

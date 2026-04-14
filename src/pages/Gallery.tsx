@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, ArrowRight, X } from "lucide-react";
 import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
+import g1 from "1.jpeg";
+import g2 from "2.jpeg";
+import g3 from "3.jpeg";
 import g4 from "@/assets/gallery-4.jpg";
 import drillingImg from "@/assets/service-drilling.jpg";
 import cleaningImg from "@/assets/service-cleaning.jpg";
@@ -132,8 +132,8 @@ const Gallery = () => {
         <div className="container mx-auto px-4">
           <h2 className="font-heading text-3xl mb-4">Want Similar Results?</h2>
           <p className="opacity-80 mb-8 max-w-md mx-auto">Get a free site inspection and quote for your borewell project.</p>
-          <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
-            <Phone size={16} /> Call 90424 32061
+          <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
+            <Phone size={16} /> Call 96638 62061
           </a>
         </div>
       </section>

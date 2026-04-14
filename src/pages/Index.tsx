@@ -7,8 +7,8 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import heroImg from "@/assets/hero-borewell.jpg";
-import drillingImg from "@/assets/service-drilling.jpg";
+import heroImg from "1.jpeg";
+import drillingImg from "2.jpeg";
 import cleaningImg from "@/assets/service-cleaning.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -57,7 +57,7 @@ const testimonials = [
 const faqs = [
   {
     q: "How deep can you drill a borewell?",
-    a: "We can drill borewells up to 1,500 feet deep depending on the geological conditions. Our high-pressure rigs are equipped to handle rocky terrain, clay, and hard formations found across Bangalore.",
+    a: "We can drill borewells up to 2,500 feet deep depending on the geological conditions. Our high-pressure rigs are equipped to handle rocky terrain, clay, and hard formations found across Bangalore.",
   },
   {
     q: "How long does it take to complete a borewell?",
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: "What areas in Bangalore do you serve?",
-    a: "We serve all of South and East Bangalore including Electronic City, Bommasandra, Anekal, Chandapura, HSR Layout, Sarjapur, Whitefield, and surrounding areas.",
+    a: "We serve all around Bangalore including Electronic City, Bommasandra, Anekal, Chandapura, HSR Layout, Sarjapur, Whitefield, JP Nagar, and surrounding areas.",
   },
   {
     q: "What is the cost of borewell drilling?",
@@ -117,7 +117,7 @@ const Index = () => (
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:9042432061"
+              href="tel:9663862061"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors shadow-green"
             >
               <Phone size={18} /> Call Now — 90424 32061
@@ -155,7 +155,7 @@ const Index = () => (
           { num: "500+", label: "Projects Completed", icon: <BarChart3 size={20} /> },
           { num: "10+", label: "Years Experience", icon: <Award size={20} /> },
           { num: "100%", label: "Client Satisfaction", icon: <ThumbsUp size={20} /> },
-          { num: "24/7", label: "Emergency Service", icon: <Headphones size={20} /> },
+          { num: "24/7", label: "Working hours 24/7", icon: <Headphones size={20} /> },
         ].map((s) => (
           <div key={s.label} className="flex flex-col items-center">
             <div className="mb-2 opacity-70">{s.icon}</div>
@@ -197,7 +197,7 @@ const Index = () => (
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[
-            { img: drillingImg, title: "Borewell Drilling", desc: "Professional drilling with 6½\", Rings & Robo specifications using high pressure rigs for residential, commercial & agricultural needs.", icon: <Droplets size={24} />, features: ["6½\" & Robo Drilling", "Up to 1,500 ft depth", "All terrain capable"] },
+            { img: drillingImg, title: "Borewell Drilling", desc: "Professional drilling with 6½\", Rings & Robo specifications using high pressure rigs for residential, commercial & agricultural needs.", icon: <Droplets size={24} />, features: ["6½\" & Robo Drilling", "Up to 2,500 ft depth", "All terrain capable"] },
             { img: cleaningImg, title: "Borewell Cleaning", desc: "Expert cleaning and flushing to restore water flow, remove sediment, and extend the life of your borewell.", icon: <Wrench size={24} />, features: ["Complete flushing", "Debris removal", "Flow restoration"] },
             { img: gallery1, title: "Annual Maintenance", desc: "Our AMC plans keep your borewell in peak condition year-round with scheduled maintenance and priority support.", icon: <Repeat size={24} />, features: ["Scheduled visits", "Priority response", "Cost savings"] },
           ].map((s) => (
@@ -269,7 +269,7 @@ const Index = () => (
             { icon: <Shield size={28} />, title: "Quality Assured", desc: "Top-grade equipment, certified processes, and workmanship warranty on every project." },
             { icon: <Clock size={28} />, title: "On-Time Delivery", desc: "We commit to timelines and deliver — no delays, no excuses." },
             { icon: <Gauge size={28} />, title: "Advanced Equipment", desc: "Latest high pressure rigs for faster, cleaner, and deeper drilling." },
-            { icon: <Headphones size={28} />, title: "24/7 Emergency", desc: "Round-the-clock emergency support for borewell breakdowns and urgent repairs." },
+            { icon: <Headphones size={28} />, title: "24/7 Working hours", desc: "Round-the-clock emergency support for borewell breakdowns and urgent repairs." },
           ].map((f) => (
             <motion.div key={f.title} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="text-center p-6 rounded-xl bg-background border border-border hover:shadow-green transition-shadow">
               <div className="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
@@ -317,7 +317,7 @@ const Index = () => (
               <Link to="/services" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
                 View AMC Plans <ArrowRight size={16} />
               </Link>
-              <a href="tel:9042432061" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
+              <a href="tel:9663862061" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
                 <Phone size={14} /> Talk to Us
               </a>
             </div>
@@ -402,7 +402,7 @@ const Index = () => (
         <div className="text-center mb-12">
           <p className="font-heading text-sm tracking-[0.2em] text-primary mb-2">Coverage</p>
           <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-3">Areas We Serve</h2>
-          <p className="text-muted-foreground max-w-lg mx-auto">We provide borewell services across South & East Bangalore.</p>
+          <p className="text-muted-foreground max-w-lg mx-auto">We provide borewell services across all around Bangalore.</p>
         </div>
         <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
           {serviceAreas.map(area => (
@@ -446,7 +446,7 @@ const Index = () => (
             Free site inspection • Transparent pricing • No hidden charges. Contact us for a quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity shadow-green">
+            <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity shadow-green">
               <Phone size={16} /> Call — 90424 32061
             </a>
             <a href="mailto:n.ranjithkumar18@gmail.com" className="inline-flex items-center gap-2 border border-primary-foreground/30 px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">

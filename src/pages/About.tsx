@@ -12,7 +12,7 @@ const milestones = [
   { year: "2016", event: "Expanded to Robo drilling services with high pressure rigs" },
   { year: "2018", event: "Crossed 200+ completed borewell projects" },
   { year: "2020", event: "Launched Annual Maintenance Contracts (AMC)" },
-  { year: "2022", event: "Serving all of South & East Bangalore" },
+  { year: "2022", event: "Serving all around Bangalore" },
   { year: "2024", event: "500+ projects completed with 200+ AMC customers" },
 ];
 
@@ -41,13 +41,13 @@ const About = () => (
               Moni Borewells is a Bangalore-based borewell drilling company owned and operated by <strong className="text-foreground">Ranjithkumar</strong>. With over a decade of experience in the borewell industry, we have established ourselves as a trusted name in Electronic City and surrounding areas.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              We specialize in drilling 6½" borewells, rings & 6½" borewells, and Robo drilling using state-of-the-art high pressure rigs. Our mission is to provide reliable, efficient, and affordable water solutions to homes, businesses, and farms across Bangalore.
+              We specialize in drilling 6½" borewells, rings & 6½" borewells, and Robo drilling using state-of-the-art high pressure rigs. Our mission is to provide reliable, efficient, and affordable water solutions to <strong className="text-foreground">domestic</strong>, <strong className="text-foreground">industrial</strong>, and <strong className="text-foreground">agricultural</strong> sectors across Bangalore.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
               What truly sets us apart is our focus on long-term customer relationships. Over 60% of our business comes from repeat customers and referrals — because when we drill your borewell, we're there for the lifetime of it.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors">
+              <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors">
                 <Phone size={14} /> Contact Owner
               </a>
               <Link to="/services#amc" className="inline-flex items-center gap-2 text-primary font-heading text-sm tracking-wider hover:gap-3 transition-all">
@@ -131,7 +131,7 @@ const About = () => (
         </div>
         <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
-            { icon: <BarChart3 size={24} />, title: "High Pressure Rigs", desc: "State-of-the-art rigs capable of drilling through hard rock formations up to 1,500 feet." },
+            { icon: <BarChart3 size={24} />, title: "High Pressure Rigs", desc: "State-of-the-art rigs capable of drilling through hard rock formations up to 2,500 feet." },
             { icon: <Shield size={24} />, title: "Safety Equipment", desc: "Full safety gear, blowout preventers, and environmental protection measures on every site." },
             { icon: <Clock size={24} />, title: "Monitoring Systems", desc: "Real-time depth monitoring and water yield testing equipment for accurate results." },
           ].map(e => (
@@ -150,8 +150,8 @@ const About = () => (
       <div className="container mx-auto px-4">
         <h2 className="font-heading text-3xl mb-4">Let's Work Together</h2>
         <p className="opacity-80 mb-8 max-w-md mx-auto">Whether it's a new borewell or maintenance of an existing one — we're here to help.</p>
-        <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
-          <Phone size={16} /> Call Ranjithkumar — 90424 32061
+        <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
+          <Phone size={16} /> Call Ranjithkumar — 96638 62061
         </a>
       </div>
     </section>
