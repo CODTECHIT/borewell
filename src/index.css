@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 10% 97%;
+    --foreground: 160 30% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 5%;
+
+    --primary: 145 63% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 36 90% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 150 10% 90%;
+    --muted-foreground: 160 15% 25%;
+
+    --accent: 200 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 10% 88%;
+    --input: 150 10% 88%;
+    --ring: 145 63% 32%;
+
+    --radius: 0.5rem;
+
+    --hero-overlay: linear-gradient(135deg, hsla(145, 63%, 20%, 0.85), hsla(160, 40%, 10%, 0.7));
+    --section-gradient: linear-gradient(180deg, hsl(150, 10%, 97%) 0%, hsl(150, 15%, 93%) 100%);
+    --green-glow: 0 8px 32px -8px hsla(145, 63%, 32%, 0.3);
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  .dark {
+    --background: 160 20% 6%;
+    --foreground: 150 10% 95%;
+    --card: 160 18% 10%;
+    --card-foreground: 150 10% 95%;
+    --popover: 160 18% 10%;
+    --popover-foreground: 150 10% 95%;
+    --primary: 145 63% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 36 90% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 160 15% 15%;
+    --muted-foreground: 150 10% 60%;
+    --accent: 200 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 160 15% 20%;
+    --input: 160 15% 20%;
+    --ring: 145 63% 42%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: var(--hero-overlay);
+  }
+  .section-gradient {
+    background: var(--section-gradient);
+  }
+  .shadow-green {
+    box-shadow: var(--green-glow);
+  }
+}
