@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Droplets, Wrench, CheckCircle, Phone, Repeat, Shield, Clock, Star, ArrowRight, Zap } from "lucide-react";
 import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import drillingImg from "2.jpeg";
+import drillingImg from "@/assets/service-drilling.jpg";
 import cleaningImg from "@/assets/service-cleaning.jpg";
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6 } } };
