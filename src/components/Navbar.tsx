@@ -67,10 +67,10 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <a
-            href="tel:9663862061"
+            href="tel:9042432061"
             className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors shadow-green"
           >
-            <Phone size={14} /> Call Now
+            <Phone size={14} /> Call Now — 90424 32061 / 96638 62061
           </a>
           <button
             className="lg:hidden text-foreground p-1"
@@ -106,10 +106,10 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="tel:9663862061"
+                href="tel:9042432061"
                 className="flex items-center justify-center gap-2 bg-primary text-primary-foreground px-4 py-3 rounded-lg font-heading text-sm mt-3 shadow-green"
               >
-                <Phone size={14} /> Call Now — 96638 62061
+                <Phone size={14} /> Call Now — 90424 32061 / 96638 62061
               </a>
             </div>
           </motion.div>

@@ -40,6 +40,8 @@ const Contact = () => {
         <div className="container mx-auto px-4 flex items-center justify-center gap-3 text-sm font-heading tracking-wider">
           <AlertTriangle size={16} />
           <span>Borewell Emergency? Call now for 24/7 support:</span>
+          <a href="tel:9042432061" className="underline font-bold">90424 32061</a>
+          <span>or</span>
           <a href="tel:9663862061" className="underline font-bold">96638 62061</a>
         </div>
       </section>
@@ -52,8 +54,8 @@ const Contact = () => {
               <h2 className="font-heading text-2xl text-foreground mb-6">Contact Information</h2>
               <div className="space-y-5">
                 {[
-                  { icon: <Phone size={20} />, label: "Phone", value: "96638 62061", href: "tel:9663862061" },
-                  { icon: <MessageCircle size={20} />, label: "WhatsApp", value: "96638 62061", href: "https://wa.me/919663862061" },
+                  { icon: <Phone size={20} />, label: "Phone", value: "90424 32061 / 96638 62061", href: "tel:9042432061" },
+                  { icon: <MessageCircle size={20} />, label: "WhatsApp", value: "90424 32061 / 96638 62061", href: "https://wa.me/919042432061" },
                   { icon: <Mail size={20} />, label: "Email", value: "n.ranjithkumar18@gmail.com", href: "mailto:n.ranjithkumar18@gmail.com" },
                   { icon: <MapPin size={20} />, label: "Address", value: "All around Bangalore" },
                   { icon: <Clock size={20} />, label: "Working Hours", value: "Mon - Sun: 6:00 AM - 9:00 PM" },
@@ -148,7 +150,7 @@ const Contact = () => {
                   <Send size={16} /> Send via WhatsApp
                 </button>
                 <p className="text-xs text-muted-foreground text-center">
-                  Or call directly: <a href="tel:9663862061" className="text-primary">96638 62061</a>
+                  Or call directly: <a href="tel:9042432061" className="text-primary">90424 32061</a> / <a href="tel:9663862061" className="text-primary">96638 62061</a>
                 </p>
               </form>
             </motion.div>

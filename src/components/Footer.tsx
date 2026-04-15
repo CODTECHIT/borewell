@@ -29,8 +29,8 @@ const Footer = () => (
         <p className="text-sm opacity-70 font-body leading-relaxed mb-4">
           Professional borewell drilling, cleaning, and annual maintenance services across Bangalore. Trusted by 500+ customers.
         </p>
-<a href="tel:9663862061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-heading text-xs tracking-wider">
-              <Phone size={14} /> Call Now: 96638 62061
+<a href="tel:9042432061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-heading text-xs tracking-wider">
+              <Phone size={14} /> Call Now: 90424 32061 / 96638 62061
             </a>
       </div>
 
@@ -67,8 +67,8 @@ const Footer = () => (
       <div>
         <h3 className="font-heading text-sm tracking-[0.15em] mb-4 opacity-90">CONTACT INFO</h3>
         <div className="flex flex-col gap-3 text-sm opacity-70">
-          <a href="tel:9663862061" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
-            <Phone size={14} className="shrink-0" /> 96638 62061
+          <a href="tel:9042432061" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
+            <Phone size={14} className="shrink-0" /> 90424 32061 / 96638 62061
           </a>
           <a href="mailto:n.ranjithkumar18@gmail.com" className="flex items-center gap-2 hover:opacity-100 transition-opacity">
             <Mail size={14} className="shrink-0" /> n.ranjithkumar18@gmail.com
