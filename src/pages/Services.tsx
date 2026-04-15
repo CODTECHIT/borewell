@@ -16,7 +16,6 @@ const amcPlans = [
       "1 scheduled cleaning per year",
       "Annual water quality test",
       "Phone support during business hours",
-      "10% discount on repairs",
       "Basic inspection report",
     ],
     highlight: false,
@@ -28,7 +27,6 @@ const amcPlans = [
       "2 scheduled cleanings per year",
       "Bi-annual water quality tests",
       "Priority phone & WhatsApp support",
-      "15% discount on all repairs",
       "Detailed inspection report",
       "Emergency response within 6 hours",
     ],
@@ -41,7 +39,6 @@ const amcPlans = [
       "3 scheduled cleanings per year",
       "Quarterly water quality tests",
       "24/7 dedicated support line",
-      "20% discount on all repairs",
       "Comprehensive inspection report",
       "Emergency response within 4 hours",
       "Free minor repairs included",
@@ -61,6 +58,42 @@ const Services = () => (
           <h1 className="font-heading text-4xl md:text-5xl mb-4">Our Services</h1>
           <p className="opacity-80 max-w-xl mx-auto">Complete borewell solutions — from drilling to lifetime maintenance.</p>
         </motion.div>
+      </div>
+    </section>
+
+    {/* Video Gallery */}
+    <section className="py-12 bg-card">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="font-heading text-2xl md:text-3xl text-foreground mb-2">See Our Work in Action</h2>
+          <p className="text-muted-foreground text-sm">Watch our borewell drilling and cleaning operations</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            "/11.mp4",
+            "/12.mp4",
+            "/13.mp4",
+          ].map((video, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+              className="relative rounded-xl overflow-hidden shadow-green aspect-[9/16] md:aspect-[3/4] group"
+            >
+              <video
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -99,7 +132,7 @@ const Services = () => (
               ))}
             </div>
             <a
-              href={`https://wa.me/919663862061?text=${encodeURIComponent("*Enquiry for Borewell Drilling Quote* \nI would like to get a quote for a new borewell drilling project.")}`}
+              href={`https://wa.me/919042432061?text=${encodeURIComponent("*Enquiry for Borewell Drilling Quote* \nI would like to get a quote for a new borewell drilling project.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors"
@@ -141,7 +174,7 @@ const Services = () => (
               ))}
             </div>
             <a
-              href={`https://wa.me/919042432061?text=${encodeURIComponent("*Enquiry for Borewell Cleaning Service* \nI would like to book a borewell cleaning service.")}`}
+              href={`https://wa.me/919663862061?text=${encodeURIComponent("*Enquiry for Borewell Cleaning Service* \nI would like to book a borewell cleaning service.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors"
@@ -179,8 +212,8 @@ const Services = () => (
               viewport={{ once: true }}
               variants={fadeUp}
               className={`rounded-xl border p-6 flex flex-col ${plan.highlight
-                  ? "border-primary bg-primary/5 shadow-green relative"
-                  : "border-border bg-background"
+                ? "border-primary bg-primary/5 shadow-green relative"
+                : "border-border bg-background"
                 }`}
             >
               {plan.highlight && (
@@ -204,8 +237,8 @@ const Services = () => (
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-heading text-sm tracking-wider transition-colors ${plan.highlight
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
+                  ? "bg-primary text-primary-foreground hover:bg-primary/90"
+                  : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
                   }`}
               >
                 Choose {plan.name}
@@ -248,8 +281,8 @@ const Services = () => (
         <h2 className="font-heading text-3xl mb-4">Ready to Get Started?</h2>
         <p className="opacity-80 mb-8 max-w-md mx-auto">Free site inspection and transparent pricing — contact us today for a no-obligation quote.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:9663862061" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
-            <Phone size={16} /> Call 96638 62061
+          <a href="tel:9042432061" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
+            <Phone size={16} /> Call 90424 32061 / 96638 62061
           </a>
           <Link to="/contact" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
             Send Enquiry <ArrowRight size={16} />

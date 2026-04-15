@@ -120,7 +120,7 @@ const Index = () => (
               href="tel:9663862061"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors shadow-green"
             >
-              <Phone size={18} /> Call Now — 90424 32061
+              <Phone size={18} /> Call Now — 90424 32061 / 96638 62061
             </a>
             <Link
               to="/contact"
@@ -317,7 +317,7 @@ const Index = () => (
               <Link to="/services" className="inline-flex items-center justify-center gap-2 bg-card text-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
                 View AMC Plans <ArrowRight size={16} />
               </Link>
-              <a href="tel:9663862061" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
+              <a href="tel:9042432061" className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
                 <Phone size={14} /> Talk to Us
               </a>
             </div>
@@ -396,6 +396,39 @@ const Index = () => (
       </div>
     </section>
 
+    {/* Video Gallery */}
+    <section className="py-20 section-gradient">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <p className="font-heading text-sm tracking-[0.2em] text-primary mb-2">Our Work</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-3">Videos of Our Projects</h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">Watch our borewell drilling and cleaning in action.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {["/11.mp4", "/12.mp4", "/13.mp4"].map((video, index) => (
+            <motion.div
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeUp}
+              className="relative rounded-xl overflow-hidden shadow-green aspect-[9/16] md:aspect-[3/4] group"
+            >
+              <video
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Service Areas */}
     <section className="py-20 section-gradient">
       <div className="container mx-auto px-4">
@@ -446,8 +479,8 @@ const Index = () => (
             Free site inspection • Transparent pricing • No hidden charges. Contact us for a quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity shadow-green">
-              <Phone size={16} /> Call — 90424 32061
+            <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity shadow-green">
+              <Phone size={16} /> Call — 90424 32061 / 96638 62061
             </a>
             <a href="mailto:n.ranjithkumar18@gmail.com" className="inline-flex items-center gap-2 border border-primary-foreground/30 px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:bg-primary-foreground/10 transition-colors">
               <Mail size={16} /> Email Us

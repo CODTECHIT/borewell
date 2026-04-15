@@ -47,8 +47,8 @@ const About = () => (
               What truly sets us apart is our focus on long-term customer relationships. Over 60% of our business comes from repeat customers and referrals — because when we drill your borewell, we're there for the lifetime of it.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors">
-                <Phone size={14} /> Contact Owner
+              <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading text-sm tracking-wider hover:bg-primary/90 transition-colors">
+                <Phone size={14} /> Contact Owner — 90424 32061 / 96638 62061
               </a>
               <Link to="/services#amc" className="inline-flex items-center gap-2 text-primary font-heading text-sm tracking-wider hover:gap-3 transition-all">
                 View AMC Plans <ChevronRight size={14} />
@@ -150,8 +150,8 @@ const About = () => (
       <div className="container mx-auto px-4">
         <h2 className="font-heading text-3xl mb-4">Let's Work Together</h2>
         <p className="opacity-80 mb-8 max-w-md mx-auto">Whether it's a new borewell or maintenance of an existing one — we're here to help.</p>
-        <a href="tel:9663862061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
-          <Phone size={16} /> Call Ranjithkumar — 96638 62061
+        <a href="tel:9042432061" className="inline-flex items-center gap-2 bg-card text-foreground px-8 py-4 rounded-lg font-heading text-sm tracking-wider hover:opacity-90 transition-opacity">
+          <Phone size={16} /> Call Ranjithkumar — 90424 32061 / 96638 62061
         </a>
       </div>
     </section>
