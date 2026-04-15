@@ -22,9 +22,8 @@ const Footer = () => (
           <img 
             src="moni_borewells_logo.png" 
             alt="Moni Borewells Logo" 
-            className="w-10 h-10 rounded-xl object-contain"
+            className="h-12 w-auto rounded-lg object-contain"
           />
-          <span className="font-heading text-xl font-bold tracking-wide">Moni Borewells</span>
         </div>
         <p className="text-sm opacity-70 font-body leading-relaxed mb-4">
           Professional borewell drilling, cleaning, and annual maintenance services across Bangalore. Trusted by 500+ customers.
