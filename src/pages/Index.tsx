@@ -7,8 +7,8 @@ import {
 } from "lucide-react";
 import Layout from "@/components/Layout";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import heroImg from "1.jpeg";
-import drillingImg from "2.jpeg";
+import heroImg from "/1.jpeg";
+import drillingImg from "/2.jpeg";
 import cleaningImg from "@/assets/service-cleaning.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
