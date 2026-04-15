@@ -41,7 +41,7 @@ const About = () => (
               Moni Borewells is a Bangalore-based borewell drilling company owned and operated by <strong className="text-foreground">Ranjithkumar</strong>. With over a decade of experience in the borewell industry, we have established ourselves as a trusted name in Electronic City and surrounding areas.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              We specialize in drilling 6½" borewells, rings & 6½" borewells, and Robo drilling using state-of-the-art high pressure rigs. Our mission is to provide reliable, efficient, and affordable water solutions to <strong className="text-foreground">domestic</strong>, <strong className="text-foreground">industrial</strong>, and <strong className="text-foreground">agricultural</strong> sectors across Bangalore.
+              We specialize in drilling 6½" borewells, rigs & 6½" borewells, and Robo drilling using state-of-the-art high pressure rigs. Our mission is to provide reliable, efficient, and affordable water solutions to <strong className="text-foreground">domestic</strong>, <strong className="text-foreground">industrial</strong>, and <strong className="text-foreground">agricultural</strong> sectors across Bangalore.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
               What truly sets us apart is our focus on long-term customer relationships. Over 60% of our business comes from repeat customers and referrals — because when we drill your borewell, we're there for the lifetime of it.

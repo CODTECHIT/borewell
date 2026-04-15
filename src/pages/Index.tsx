@@ -113,7 +113,7 @@ const Index = () => (
             Experts
           </motion.h1>
           <motion.p variants={fadeUp} className="text-primary-foreground/80 text-lg md:text-xl mb-8 font-body leading-relaxed max-w-xl">
-            Specialist in high pressure rigs — Drilling 6½", Rings & Robo. Serving Electronic City & all of Bangalore with 10+ years of expertise.
+            Specialist in high pressure rigs — Drilling 6½", rigs & Robo. Serving Electronic City & all of Bangalore with 10+ years of expertise.
           </motion.p>
           <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4">
             <a
@@ -131,7 +131,7 @@ const Index = () => (
           </motion.div>
           <motion.div variants={fadeUp} className="flex items-center gap-6 mt-8 pt-8 border-t border-primary-foreground/10">
             <div className="flex -space-x-2">
-              {[1,2,3,4].map(i => (
+              {[1, 2, 3, 4].map(i => (
                 <div key={i} className="w-8 h-8 rounded-full bg-primary/60 border-2 border-primary-foreground/20 flex items-center justify-center">
                   <Users size={12} className="text-primary-foreground/70" />
                 </div>
@@ -139,7 +139,7 @@ const Index = () => (
             </div>
             <div>
               <div className="flex gap-0.5">
-                {[1,2,3,4,5].map(i => <Star key={i} size={14} className="text-secondary fill-secondary" />)}
+                {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} className="text-secondary fill-secondary" />)}
               </div>
               <p className="text-primary-foreground/60 text-xs mt-0.5">Rated 4.9/5 by our customers</p>
             </div>
@@ -197,7 +197,7 @@ const Index = () => (
         </div>
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[
-            { img: drillingImg, title: "Borewell Drilling", desc: "Professional drilling with 6½\", Rings & Robo specifications using high pressure rigs for residential, commercial & agricultural needs.", icon: <Droplets size={24} />, features: ["6½\" & Robo Drilling", "Up to 2,500 ft depth", "All terrain capable"] },
+            { img: drillingImg, title: "Borewell Drilling", desc: "Professional drilling with 6½\", rigs & Robo specifications using high pressure rigs for residential, commercial & agricultural needs.", icon: <Droplets size={24} />, features: ["6½\" & Robo Drilling", "Up to 2,500 ft depth", "All terrain capable"] },
             { img: cleaningImg, title: "Borewell Cleaning", desc: "Expert cleaning and flushing to restore water flow, remove sediment, and extend the life of your borewell.", icon: <Wrench size={24} />, features: ["Complete flushing", "Debris removal", "Flow restoration"] },
             { img: gallery1, title: "Annual Maintenance", desc: "Our AMC plans keep your borewell in peak condition year-round with scheduled maintenance and priority support.", icon: <Repeat size={24} />, features: ["Scheduled visits", "Priority response", "Cost savings"] },
           ].map((s) => (

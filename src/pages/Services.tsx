@@ -85,7 +85,7 @@ const Services = () => (
             <div className="grid grid-cols-2 gap-3 mb-6">
               {[
                 "6½\" Borewell Drilling",
-                "Rings & 6½\" Drilling",
+                "rigs & 6½\" Drilling",
                 "Robo Drilling",
                 "High Pressure Rigs",
                 "Up to 2,500 ft depth",
@@ -98,7 +98,7 @@ const Services = () => (
                 </div>
               ))}
             </div>
-            <a 
+            <a
               href={`https://wa.me/919663862061?text=${encodeURIComponent("*Enquiry for Borewell Drilling Quote* \nI would like to get a quote for a new borewell drilling project.")}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -140,7 +140,7 @@ const Services = () => (
                 </div>
               ))}
             </div>
-            <a 
+            <a
               href={`https://wa.me/919042432061?text=${encodeURIComponent("*Enquiry for Borewell Cleaning Service* \nI would like to book a borewell cleaning service.")}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -178,11 +178,10 @@ const Services = () => (
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className={`rounded-xl border p-6 flex flex-col ${
-                plan.highlight
+              className={`rounded-xl border p-6 flex flex-col ${plan.highlight
                   ? "border-primary bg-primary/5 shadow-green relative"
                   : "border-border bg-background"
-              }`}
+                }`}
             >
               {plan.highlight && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground px-4 py-1 rounded-full text-xs font-heading tracking-wider flex items-center gap-1">
@@ -204,11 +203,10 @@ const Services = () => (
                 href={`https://wa.me/919042432061?text=${encodeURIComponent(`*Enquiry for AMC Plan: ${plan.name}* \nI am interested in the ${plan.name} AMC plan for my borewell.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-heading text-sm tracking-wider transition-colors ${
-                  plan.highlight
+                className={`flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-heading text-sm tracking-wider transition-colors ${plan.highlight
                     ? "bg-primary text-primary-foreground hover:bg-primary/90"
                     : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
-                }`}
+                  }`}
               >
                 Choose {plan.name}
               </a>
